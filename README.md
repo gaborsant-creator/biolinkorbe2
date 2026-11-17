@@ -22,3 +22,4 @@ Basta abrir o arquivo `index.html` em qualquer navegador web ou iniciar um servi
 ```bash
 python -m http.server 3000
 ```
+
