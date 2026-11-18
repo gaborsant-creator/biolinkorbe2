@@ -23,9 +23,13 @@
   <div class="ambient-glow top-glow"></div>
   <div class="ambient-glow bottom-glow"></div>
 
-  <!-- Panoramic Desktop Banner (Full Screen Width) -->
+  <!-- Responsive Ambient Banner (Mobile & Desktop) -->
   <div class="desktop-banner-wrapper" aria-hidden="true">
-    <img src="assets/bg_desktop.jpg" alt="" class="desktop-banner-img" />
+    <picture>
+      <source media="(max-width: 767px)" srcset="assets/bg_mobile.jpg" />
+      <source media="(min-width: 768px)" srcset="assets/bg_desktop.jpg" />
+      <img src="assets/bg_desktop.jpg" alt="" class="desktop-banner-img" />
+    </picture>
     <div class="desktop-banner-overlay"></div>
   </div>
 
