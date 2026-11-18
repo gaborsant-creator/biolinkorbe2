@@ -255,14 +255,38 @@ body {
   display: block;
 }
 
-/* Tagline */
+/* Tagline: DIGITAL STUDIO with side lines */
+.brand-tagline-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tagline-line {
+  width: 28px;
+  height: 1px;
+  flex-shrink: 0;
+}
+
+.tagline-line.line-left {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.32) 100%);
+}
+
+.tagline-line.line-right {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, transparent 100%);
+}
+
 .brand-tagline {
   font-family: var(--font-body);
-  font-size: 13.5px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  color: var(--text-secondary);
-  margin-bottom: 12px;
+  font-size: 10.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  color: #b0b8c4;
+  line-height: 1;
 }
 
 /* Introductory Text */
@@ -827,9 +851,19 @@ body {
     height: 20px;
   }
 
-  .brand-tagline {
-    font-size: 15px;
+  .brand-tagline-wrapper {
+    gap: 14px;
     margin-bottom: 14px;
+  }
+
+  .tagline-line {
+    width: 36px;
+  }
+
+  .brand-tagline {
+    font-size: 11.5px;
+    letter-spacing: 0.38em;
+    text-indent: 0.38em;
   }
 
   .brand-intro {
