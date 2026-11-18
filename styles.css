@@ -178,10 +178,10 @@ body {
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  background: #000000;
+  background: radial-gradient(circle at 40% 35%, #181a1f 0%, #060709 75%);
   border: 1px solid rgba(224, 200, 150, 0.45);
   box-shadow: 
-    0 0 18px rgba(214, 185, 125, 0.18),
+    0 0 20px rgba(214, 185, 125, 0.18),
     inset 0 0 16px rgba(214, 185, 125, 0.08),
     inset 0 1px 1px rgba(255, 255, 255, 0.25);
   display: flex;
@@ -194,25 +194,27 @@ body {
 }
 
 .avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
   display: block;
-  border-radius: 50%;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
 }
 
 .avatar-wrapper:hover .avatar-circle {
   border-color: rgba(235, 215, 170, 0.75);
   box-shadow: 
-    0 0 26px rgba(224, 195, 135, 0.35),
+    0 0 28px rgba(224, 195, 135, 0.35),
     inset 0 0 20px rgba(224, 195, 135, 0.15),
     inset 0 1px 2px rgba(255, 255, 255, 0.4);
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .avatar-wrapper:hover .avatar-img {
-  transform: scale(1.06);
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.35));
 }
 
 .avatar-text {
