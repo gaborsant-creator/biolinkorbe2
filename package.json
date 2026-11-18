@@ -1,0 +1,15 @@
+{
+  "name": "bio-links-orbe",
+  "version": "1.0.0",
+  "description": "Página de Biolink profissional desenvolvida para a ORBE",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}

@@ -10,16 +10,29 @@ Página de Biolink profissional desenvolvida para a **ORBE**, com estética futu
 
 ## 🌌 Características
 
-- Identidade visual escura (#030303) com atmosfera espacial.
-- Efeitos refinados de vidro translúcido (*Glassmorphism*).
-- Responsivo para dispositivos móveis e adaptável a telas desktop.
-- 4 botões de redes sociais e 4 cards principais de navegação.
+- Identidade visual escura (#030303) com atmosfera espacial e estrelas dinâmicas.
+- **Versão Desktop Completa**:
+  - Layout expandido e imersivo com grid responsivo 2x2 para os cards.
+  - Efeitos aprimorados de *Glassmorphism*, reflexo dinâmico sob o cursor e iluminação celestial.
+  - Remoção de molduras restritivas de smartphone em telas grandes para um visual autêntico de hub digital.
+- **Versão Mobile Nativa**:
+  - Fluidez 100% otimizada para smartphones com toque e haptic feedback.
 
 ## 💻 Como Executar
 
-Basta abrir o arquivo `index.html` em qualquer navegador web ou iniciar um servidor local com:
+Inicie o servidor de desenvolvimento com o NPM:
 
 ```bash
-python -m http.server 3000
+npm run dev
+# ou
+npm start
+```
+
+O servidor iniciará automaticamente em `http://localhost:5173`.
+
+Para gerar a build de produção:
+
+```bash
+npm run build
 ```
 

@@ -19,8 +19,15 @@
 </head>
 <body>
   <!-- Ambient Space Canvas for Desktop presentation -->
+  <div class="space-stars" aria-hidden="true"></div>
   <div class="ambient-glow top-glow"></div>
   <div class="ambient-glow bottom-glow"></div>
+
+  <!-- Panoramic Desktop Banner (Full Screen Width) -->
+  <div class="desktop-banner-wrapper" aria-hidden="true">
+    <img src="assets/bg_desktop.jpg" alt="" class="desktop-banner-img" />
+    <div class="desktop-banner-overlay"></div>
+  </div>
 
   <!-- Main Mobile Frame Container -->
   <main class="phone-frame" id="app">
@@ -78,40 +85,6 @@
           pessoas, ideias e possibilidades.
         </p>
       </header>
-
-      <!-- 3. REDES SOCIAIS -->
-      <nav class="socials-nav fade-in" style="--delay: 2" aria-label="Redes Sociais">
-        <!-- Instagram -->
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram da ORBE" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
-            <rect x="2" y="2" width="20" height="20" rx="5.5" ry="5.5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn da ORBE" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
-            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.88a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"></path>
-          </svg>
-        </a>
-
-        <!-- YouTube -->
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="YouTube da ORBE" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon">
-            <path d="M21.58 7.19a2.5 2.5 0 0 0-1.76-1.77C18.25 5 12 5 12 5s-6.25 0-7.82.42A2.5 2.5 0 0 0 2.42 7.19 26.15 26.15 0 0 0 2 12a26.15 26.15 0 0 0 .42 4.81 2.5 2.5 0 0 0 1.76 1.77C5.75 19 12 19 12 19s6.25 0 7.82-.42a2.5 2.5 0 0 0 1.76-1.77 26.15 26.15 0 0 0 .42-4.81 26.15 26.15 0 0 0-.42-4.81zM10 15V9l5.2 3-5.2 3z"></path>
-          </svg>
-        </a>
-
-        <!-- E-mail -->
-        <a href="mailto:contato@orbe.digital" class="social-btn" id="email-btn" title="E-mail da ORBE" aria-label="E-mail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
-            <rect x="2" y="4" width="20" height="16" rx="3"></rect>
-            <path d="M22 6L12 13L2 6"></path>
-          </svg>
-        </a>
-      </nav>
 
       <!-- 4. BOTÕES PRINCIPAIS (4 CARDS) -->
       <section class="cards-section" aria-label="Links Principais">
@@ -243,7 +216,7 @@
     <span class="toast-text" id="toast-text">Link copiado com sucesso!</span>
   </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
 
